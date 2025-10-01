@@ -1,0 +1,202 @@
+.attendance-container {
+  margin-left: 260px;
+  margin-top: 20px;
+  padding: 32px 24px;
+  background: white;
+  border-radius: 16px;
+  min-height: 80vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.attendance-container h2 {
+  color: #2563eb;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 23px;
+  user-select: none;
+}
+
+.attendance-actions {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 16px;
+}
+
+.att-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.23s;
+  user-select: none;
+}
+
+.att-btn:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.att-table {
+  width: 100%;
+  background: #f9fafb;
+  border-radius: 14px;
+  box-shadow: 0 3px 14px rgba(52, 99, 204, 0.07);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+.att-table th,
+.att-table td {
+  padding: 13px 18px;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: middle;
+  
+}
+
+.att-table th {
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  user-select: none;
+}
+
+.att-search {
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  font-size: 1rem;
+  max-width: 260px;
+}
+
+.edit-btn,
+.delete-btn,
+.cancel-btn {
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+  user-select: none;
+  min-width: 65px;
+  text-align: center;
+}
+
+.edit-btn {
+  background-color: #2563eb;
+}
+
+.edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+.cancel-btn {
+  background-color: #6b7280;
+}
+
+.cancel-btn:hover {
+  background-color: #4b5563;
+}
+
+.att-table input[type="text"] {
+  width: 90px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: #f4f8ff;
+}
+
+@media (max-width: 900px) {
+  .attendance-container {
+    margin-left: 0;
+    margin-top: 90px;
+    padding: 20px;
+  }
+
+  .att-table th,
+  .att-table td {
+    padding: 9px 10px;
+    font-size: 0.98rem;
+  }
+}
+.att-search {
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  font-size: 1rem;
+  max-width: 260px;
+}
+.edit-btn,
+.delete-btn,
+.cancel-btn {
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+  user-select: none;
+  min-width: 65px;
+  text-align: center;
+}
+
+.edit-btn {
+  background-color: #2563eb;
+}
+
+.edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+.cancel-btn {
+  background-color: #6b7280;
+}
+
+.cancel-btn:hover {
+  background-color: #4b5563;
+}
+
+.att-table-input {
+  width: 100px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: #f4f8ff;
+}

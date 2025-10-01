@@ -1,0 +1,194 @@
+.attendance-container {
+  max-width: 1200px;
+  margin: 36px auto;
+  padding: 0 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  margin-left: 300px;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.attendance-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+  user-select: none;
+}
+
+.welcome-user {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  user-select: none;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+  background: #fff;
+  padding: 20px 16px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #2563eb22;
+}
+
+.form-section input,
+.form-section select {
+  padding: 10px 12px;
+  border: 1.2px solid #94a3b8;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 140px;
+  cursor: pointer;
+}
+
+.form-section button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background 0.18s;
+  min-width: 140px;
+}
+
+.form-section button:hover {
+  background: #1e40af;
+}
+
+.attendance-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.attendance-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 18px;
+  box-shadow: 0 2px 8px #2563eb1a;
+  min-width: 260px;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.attendance-card div {
+  margin-bottom: 6px;
+}
+
+.status {
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.status.present {
+  background-color: #22c55e;
+}
+
+.status.absent {
+  background-color: #ef4444;
+}
+
+.status.late {
+  background-color: #f97316;
+}
+
+.status.on-leave {
+  background-color: #6366f1;
+}
+
+.action-buttons,
+.edit-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+.save-btn {
+  background-color: #22c55e;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #1e7e34;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #565e64;
+}
+
+@media screen and (max-width: 900px) {
+  .form-section {
+    flex-direction: column;
+  }
+  .form-section input,
+  .form-section select,
+  .form-section button {
+    min-width: 100%;
+  }
+  .attendance-list {
+    gap: 12px;
+  }
+  .attendance-card {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-section input,
+  .form-section select,
+  .form-section button {
+    font-size: 14px;
+  }
+  .attendance-card {
+    font-size: 0.9rem;
+  }
+}

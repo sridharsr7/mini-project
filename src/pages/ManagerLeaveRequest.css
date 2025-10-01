@@ -1,0 +1,180 @@
+.eleave-container, .hrleave-container, .mleave-container {
+  max-width: 1300px;
+  margin-left: 260px;
+  margin-top: 60px;
+  padding: 30px 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.13);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.eleave-header h1, .mleave-container h1, .hrleave-container h1 {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.eleave-welcome {
+  font-weight: 700;
+  color: #374151;
+  font-size: 1.2rem;
+}
+
+.eleave-form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.eleave-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 1rem;
+  min-width: 140px;
+  gap: 8px;
+}
+
+.eleave-form select,
+.eleave-form input,
+.eleave-form textarea {
+  padding: 10px;
+  border: 1px solid #dbeafe;
+  background: #f1f6fd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.eleave-btn {
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.22s;
+  user-select: none;
+}
+
+.eleave-btn:hover {
+  background: #1e40af;
+}
+
+.eleave-error {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.eleave-success {
+  color: #22c55e;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.eleave-table, .mleave-table, .hrleave-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.08);
+  overflow: hidden;
+}
+
+.eleave-table th, .eleave-table td,
+.mleave-table th, .mleave-table td,
+.hrleave-table th, .hrleave-table td {
+  padding: 13px 16px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ecf2fd;
+  font-weight: 500;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.eleave-table th, .mleave-table th, .hrleave-table th {
+  background: #f1f6fd;
+  color: #2563eb;
+}
+
+.status {
+  border-radius: 6px;
+  padding: 4px 13px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  min-width: 75px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fbbf24;
+  color: #92400e;
+}
+
+.status.approved {
+  background: #22c55e;
+}
+
+.status.rejected {
+  background: #ef4444;
+}
+
+.approve-btn, .reject-btn {
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.approve-btn {
+  background-color: #2563eb;
+}
+
+.approve-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.reject-btn {
+  background-color: #dc2626;
+}
+
+.reject-btn:hover {
+  background-color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+  .eleave-container, .mleave-container, .hrleave-container {
+    margin-left: 0;
+    margin-top: 90px;
+    max-width: 100vw;
+    padding: 16px;
+  }
+
+  .eleave-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .eleave-header h1, .mleave-container h1, .hrleave-container h1 {
+    font-size: 1.3rem;
+  }
+}

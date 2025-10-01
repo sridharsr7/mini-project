@@ -1,0 +1,145 @@
+.reports-container {
+  max-width: 1200px;
+  margin: 36px auto;
+  padding: 0 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  margin-left: 300px;
+}
+
+.reports-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 28px;
+}
+
+.reports-summary {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: white;
+  box-shadow: 0 4px 14px rgb(37 99 235 / 0.3);
+  border-radius: 14px;
+  padding: 28px 36px;
+  flex: 1 1 200px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+.summary-card p {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.reports-filter {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.reports-filter select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.reports-table-section {
+  overflow-x: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 3px 22px rgb(37 99 235 / 0.15);
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.reports-table thead tr {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 700;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 14px 24px;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e7ff;
+  text-align: left;
+}
+
+.reports-table tbody tr:hover {
+  background-color: #f0f5ff;
+}
+
+.reports-table td.completed {
+  color: #22c55e; 
+  font-weight: 600;
+}
+
+.reports-table td.ongoing {
+  color: #2563eb; 
+  font-weight: 600;
+}
+
+.reports-table td.delayed {
+  color: #f97316; 
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .reports-summary {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .summary-card {
+    min-width: 100%;
+  }
+  .reports-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.reports-header {
+  margin-bottom: 28px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reports-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+}
+
+.welcome-user {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  user-select: none;
+}

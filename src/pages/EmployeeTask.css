@@ -1,0 +1,206 @@
+.task-page-container {
+  margin-left: 260px;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.task-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.task-page-header h1 {
+  font-size: 2.5rem;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.task-filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-search-input,
+.task-filters select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+}
+
+.task-search-input {
+  min-width: 250px;
+}
+
+.add-task-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.kanban-column {
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.kanban-column h3 {
+  font-size: 1.2rem;
+  color: #334155;
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+  margin-bottom: 15px;
+}
+
+.kanban-column:nth-child(1) h3 { border-color: #f59e0b; }
+.kanban-column:nth-child(2) h3 { border-color: #3b82f6; }
+.kanban-column:nth-child(3) h3 { border-color: #22c55e; }
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 400px;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-left: 5px solid;
+}
+
+.task-card.priority-low { border-color: #3b82f6; }
+.task-card.priority-medium { border-color: #f59e0b; }
+.task-card.priority-high { border-color: #ef4444; }
+
+.task-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.task-card p {
+  margin: 0 0 12px 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748b;
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.task-date {
+  font-weight: 500;
+}
+
+.task-date b {
+  color: #475569;
+}
+
+.task-assigned-to {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-top: 8px;
+}
+.task-attachment {
+  margin-top: 10px;
+}
+
+.task-attachment a {
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.attachment-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1f5f9;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.attachment-delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.attachment-delete-btn:hover {
+  color: #b91c1c;
+}
+
+.task-file-upload label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  margin-right: 8px;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-upload-button-small {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #334155;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+}
+
+.file-upload-button-small:hover {
+  background-color: #d1d5db;
+}
+
+.task-status-changer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+}
+
+@media (max-width: 900px) {
+  .task-page-container {
+    margin-left: 0;
+  }
+}

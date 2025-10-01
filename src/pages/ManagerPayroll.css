@@ -1,0 +1,125 @@
+.payroll-container {
+  margin-left: 260px;
+  padding: 40px 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #1f2937;
+  user-select: none;
+}
+
+.payroll-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.payroll-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.payroll-form select,
+.payroll-form input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  min-width: 180px;
+  user-select: text;
+}
+
+.payroll-form input[type="date"] {
+  width: 180px;
+}
+
+.payroll-form button.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 24px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.payroll-form button.submit-btn:hover {
+  background-color: #1e40af;
+}
+
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payroll-table thead tr {
+  background-color: #2563eb;
+  color: white;
+}
+
+.payroll-table th,
+.payroll-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.payroll-table tbody tr:hover {
+  background-color: #e0e7ff;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #fef3c7;
+  color: #a16207;
+}
+
+.status-badge.approved {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.search-filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-filters input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  min-width: 180px;
+}
+
+.payroll-table select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}

@@ -1,0 +1,144 @@
+.empdash-container {
+  margin-left: 260px;
+  margin-top: 60px;
+  padding: 40px 36px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.empdash-header-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.empdash-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+  user-select: none;
+}
+
+.empdash-right-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  color: #374151;
+}
+
+.empdash-welcome {
+  font-weight: 600;
+  font-size: 1.3rem;
+  user-select: none;
+}
+
+.empdash-summary-cards {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.emp-card {
+  background: #f1f6fd;
+  border-radius: 16px;
+  padding: 36px 32px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 22px rgba(37, 99, 235, 0.1);
+  text-align: center;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.emp-card:hover {
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.18);
+}
+
+.emp-card h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.emp-card-value {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #1e293b;
+}
+
+.empdash-table-wrapper {
+  box-shadow: 0 6px 22px rgba(59, 130, 246, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.empdash-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.empdash-table tbody tr:nth-child(odd) {
+  background: #f9fbff;
+}
+
+.empdash-table th,
+.empdash-table td {
+  padding: 18px 26px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #cad8fa;
+  user-select: text;
+}
+
+.empdash-table th {
+  color: #2563eb;
+  background: #d8e3fc;
+  width: 240px;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .empdash-container {
+    margin-left: 0;
+    padding: 28px 24px;
+  }
+  .empdash-summary-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .emp-card {
+    flex: 1 1 100%;
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .empdash-title {
+    font-size: 2rem;
+  }
+  .empdash-welcome {
+    font-size: 1.2rem;
+  }
+  .emp-card-value {
+    font-size: 2rem;
+  }
+  .empdash-table th,
+  .empdash-table td {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+}

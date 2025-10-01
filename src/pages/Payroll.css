@@ -1,0 +1,116 @@
+.payroll-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-left: 300px
+}
+
+.payroll-container h2 {
+  color: #0056d2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.payroll-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.payroll-form input,
+.payroll-form select,
+.payroll-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: #f9f9f9;
+  transition: 0.2s;
+}
+
+.payroll-form input:focus,
+.payroll-form select:focus,
+.payroll-form textarea:focus {
+  border-color: #0056d2;
+  background: #fff;
+}
+
+.add-payroll-btn {
+  grid-column: span 5;
+  padding: 12px;
+  background: #0056d2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-payroll-btn:hover {
+  background: #003e9e;
+}
+
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.payroll-table th,
+.payroll-table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.payroll-table th {
+  background: #f5f7fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.payroll-table td {
+  background: #fff;
+}
+
+.payroll-table tr:last-child td {
+  border-bottom: none;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #1890ff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0d6efd;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}

@@ -1,0 +1,70 @@
+.profile-edit-form {
+  margin-top: 24px;
+  background: #f1f6fd;
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+  max-width: 420px;
+  user-select: none;
+}
+
+.profile-edit-form h2 {
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.6rem;
+}
+
+.profile-edit-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.profile-edit-form input {
+  margin-top: 6px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #2563eb;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.profile-edit-form input:focus {
+  border-color: #1e40af;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.save-btn,
+.cancel-btn,
+.edit-profile-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  transition: background-color 0.25s;
+}
+
+.edit-profile-btn {
+  background-color: #2563eb;
+  margin-top: 18px;
+  width: 140px;
+}
+
+.edit-profile-btn:hover {
+  background-color: #1e40af;
+}
