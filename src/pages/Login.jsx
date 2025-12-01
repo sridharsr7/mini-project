@@ -92,6 +92,9 @@ function Login({ onLogin }) {
           Login as <Link to="/hrlogin" style={{ color: "#2563eb", textDecoration: "underline" }}>HR</Link>, <Link to="/managerlogin" style={{ color: "#2563eb", textDecoration: "underline" }}>Manager</Link> or <Link to="/adminlogin" style={{ color: "#2563eb", textDecoration: "underline" }}>Admin</Link>
         </p>
       </div>
+      <div style={{ marginTop: "10px", fontWeight: "600", fontSize: "1em" }}>
+        admin login: username - admin, password - admin123<br/>
+      </div>
     </div>
   );
 }
